@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soccer world
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add a gray background color with some padding */
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #055750;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            font-size: 40px;
+            text-align: center;
+            background: rgb(4, 58, 88);
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: rgb(20, 63, 9);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        .zebra {
+            width: 10%;
+            height: 12%;
+        }
+
+        a {
+            font-size: larger;
+            font-weight: 100;
+            color: black;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Soccer world
+        </h2>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Brazil Cup Zebras: What were the biggest surprises of the tournament in recent years?
+                    <h5> March 18, 2022</h5>
+                    <div class="zebra"><img src="./CAPA-BLOG.jpg" alt="image"></div>
+                    <p><a href="https://blog.futfanatics.com.br/futebol/zebras-da-copa-do-brasil"> Click here for more
+                            information</a></p>
+                    <p>The zebras of the Copa do Brasil every year pass through the lawns of Brazil. Do you remember
+                        which were the last ones that walked around here?</p>
+            </div>
+            <div class="card">
+                <h2>Top Players of the 90s: Team of the Decade
+                </h2>
+                <h5>October 1, 2022</h5>
+                <div class="zebra"><img src="./Ronaldo-e-romario-anos-90-capa.jpg" alt="image"></div>
+                <p><a href="https://blog.futfanatics.com.br/futebol/top-jogadores-dos-anos-90-selecao-da-decada-4">
+                        Click here for more
+                        information</a></p>
+                <p>Save my Fanatics! We know you missed our selection of the decade. For those who don't know, this is
+                    our top 10 players who made history, this time we're going to talk about players from the 90's..</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>My name is matheus, i'm 18 years old, i'm a football fanatic, my favorite team is ceara.</p>
+            </div>
+            <div class="card" style="align-items: center;">
+                <h3>Popular Post</h3>
+                <div class="fakeimg"><a
+                        href="https://blog.futfanatics.com.br/futebol/quanto-custa-uma-camisa-de-futebol-conheca-opcoes-mais-baratas-para-voce">1
+                        - click here</a>
+                </div><br>
+                <div class="fakeimg"><a
+                        href="https://blog.futfanatics.com.br/futebol/camisas-joma-2022-veja-as-novidades-dos-clubes-com-a-marca">2
+                        - click here</a>
+                </div><br>
+                <div class="fakeimg"><a
+                        href="https://blog.futfanatics.com.br/futebol/saida-conturbada-top-10-jogadores-que-sairam-de-forma-polemica-de-seus-clubes">3
+                        - click here</a>
+                </div>
+            </div>
+            <div class="card">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="0d027030-d431-4a39-ba44-a8abc1349719">
+                    <section class="sessao-contato" id="contato">
+                        <div class="contato-wrapper">
+                            <div class="contato-left"></div>
+                            <div class="contato-right">
+                                <h1>Contact</h1>
+                                <p>type the note followed by some comment</p>
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" name="name" class="field" id="nome" placeholder="name"
+                                            required>
+                                        <label for="nome" class="field-label"></label>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" name="email" class="field" id="email" placeholder="E-mail"
+                                            required>
+                                        <label for="email" class="field-label"></label>
+                                    </div>
+                                    <div class="input-group">
+                                        <textarea class="field" name="message" id="mensagem"
+                                            placeholder="opinion and suggestions" required></textarea>
+                                        <label for="mensagem" class="field-label"></label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-submit" value="Submit"
+                                        onclick="enviar()">Submit</button>
+
+                                </form>
+                            </div>
+                        </div>
+            </div>
+</body>
+
+</html>
